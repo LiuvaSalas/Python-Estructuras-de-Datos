@@ -1,6 +1,8 @@
-#Decimos al usuario que introduzca el nombre del archivo .txt a procesar
-archivo = input("Ingresa el nombre del archivo de texto incluyendo su extensión '.txt', ejemplo; texto.txt: ")
+#Importacion de bibliotecas
+import sys
 
+#Decimos al usuario que introduzca el nombre del archivo .txt a procesar
+archivo = sys.argv[1]
 
 try:
     with open(archivo, "r") as file:
