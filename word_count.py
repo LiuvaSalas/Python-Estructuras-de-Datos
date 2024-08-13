@@ -8,7 +8,7 @@ try:
     with open(archivo, "r") as file:
         texto = file.read()
         #Contamos las palabras y las letras despues de introducirlas dentro de un set para unificarlas
-        palabras = len(set(texto.split()))
+        palabras = len(set(texto.split(" ")))
         letras = len(set(texto))
         print(f"El número de caracteres distintos es: {letras}")
         print(f"El número de palabras distintas es: {palabras}")
